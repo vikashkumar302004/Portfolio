@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Backgrounds */
+  --bg-void:      #010409;
+  --bg-deep:      #080d1a;
+  --bg-surface:   #0d1424;
+  --bg-elevated:  #131d31;
+  --bg-highlight: #1a2540;
+
+  /* Accent / Brand */
+  --accent-violet:   #7c3aed;
+  --accent-indigo:   #6366f1;
+  --accent-cyan:     #22d3ee;
+  --accent-emerald:  #10b981;
+
+  /* Gradient Definitions */
+  --gradient-brand:  linear-gradient(135deg, #7c3aed, #6366f1, #22d3ee);
+  --gradient-text:   linear-gradient(135deg, #a78bfa, #818cf8, #67e8f9);
+  --gradient-card:   linear-gradient(135deg, rgba(124,58,237,0.1), rgba(34,211,238,0.05));
+  --gradient-glow:   radial-gradient(circle at 50% 50%, rgba(99,102,241,0.15), transparent 70%);
+
+  /* Text */
+  --text-primary:   #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  /* Borders */
+  --border-subtle:  rgba(99,102,241,0.12);
+  --border-default: rgba(99,102,241,0.25);
+  --border-glow:    rgba(99,102,241,0.5);
+
+  /* Glows / Shadows */
+  --shadow-card:  0 0 0 1px rgba(99,102,241,0.1), 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-glow:  0 0 40px rgba(99,102,241,0.3), 0 0 80px rgba(99,102,241,0.15);
+  --shadow-cyan:  0 0 40px rgba(34,211,238,0.25);
+}
+
+body {
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  background-image: radial-gradient(rgba(99,102,241,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #22d3ee);
+  border-radius: 999px;
+}
+
+::selection { background: rgba(99,102,241,0.35); color: #f8fafc; }
+
+html { scroll-behavior: smooth; }
+
+/* Project Card Responsive Fixes */
+@media (max-width: 1024px) {
+  .project-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
