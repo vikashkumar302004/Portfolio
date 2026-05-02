@@ -271,15 +271,15 @@ export function NexGenMockBrowser() {
 }
 
 /* ─── PROJECT 2: Let's Code Hub Stats Panel ───────── */
-export function ActivityFeed() {
-  const events = [
-    { user: "rahul_dev", action: "solved", item: "Binary Search", time: "2s ago", color: "#10b981" },
-    { user: "priya_cs", action: "passed", item: "AWS CLF-C02 Mock", time: "14s ago", color: "#f59e0b" },
-    { user: "arjun_it", action: "solved", item: "LRU Cache", time: "31s ago", color: "#10b981" },
-    { user: "sneha_k", action: "scored", item: "92% on Practice Test", time: "1m ago", color: "#818cf8" },
-    { user: "dev_2024", action: "solved", item: "Two Sum", time: "2m ago", color: "#10b981" },
-  ];
+const events = [
+  { user: "rahul_dev", action: "solved", item: "Binary Search", time: "2s ago", color: "#10b981" },
+  { user: "priya_cs", action: "passed", item: "AWS CLF-C02 Mock", time: "14s ago", color: "#f59e0b" },
+  { user: "arjun_it", action: "solved", item: "LRU Cache", time: "31s ago", color: "#10b981" },
+  { user: "sneha_k", action: "scored", item: "92% on Practice Test", time: "1m ago", color: "#818cf8" },
+  { user: "dev_2024", action: "solved", item: "Two Sum", time: "2m ago", color: "#10b981" },
+];
 
+export function ActivityFeed() {
   const [visible, setVisible] = useState(events.slice(0, 3));
 
   useEffect(() => {
@@ -572,7 +572,7 @@ export default function Projects() {
 
             <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 14 }}>
               <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ duration: 4, repeat: Infinity }} style={{ fontSize: 48 }}>⚡</motion.div>
-              <h3 style={{ fontFamily: "Space Grotesk, sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#f8fafc", margin: 0, letterSpacing: "-0.04em" }}>Let's Code Hub</h3>
+              <h3 style={{ fontFamily: "Space Grotesk, sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#f8fafc", margin: 0, letterSpacing: "-0.04em" }}>Let&apos;s Code Hub</h3>
             </div>
 
             <p style={{ color: "#22d3ee", fontFamily: "Space Grotesk, sans-serif", fontSize: 18, fontWeight: 600, marginBottom: 24 }}>DSA Practice × AWS Certification Prep</p>
