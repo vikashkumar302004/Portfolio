@@ -452,7 +452,7 @@ export default function Projects() {
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-violet/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-cyan/5 blur-[120px] rounded-full pointer-events-none" />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }} className="relative z-10">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
         
         <motion.div variants={staggerContainer(0.1)} initial="hidden" animate={isInView ? "visible" : "hidden"} style={{ textAlign: "center", marginBottom: 80 }}>
           <motion.div variants={globalFadeUp}><SectionBadge>Selected Work</SectionBadge></motion.div>

@@ -17,8 +17,8 @@ const Certifications = () => {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald/5 blur-[100px] rounded-full translate-y-1/3 -translate-x-1/4 pointer-events-none" />
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mb-16">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="max-w-3xl mb-16 lg:pl-8">
           <SectionBadge>Credentials</SectionBadge>
           <h2 className="mb-6">Validated <span className="gradient-text">Expertise</span></h2>
           <p className="text-secondary text-lg leading-relaxed">

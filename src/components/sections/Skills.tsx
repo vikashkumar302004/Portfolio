@@ -13,8 +13,8 @@ import { staggerContainer } from '@/lib/animations'
 const Skills = () => {
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mb-16">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="max-w-3xl mb-16 lg:pl-8">
           <SectionBadge>Technical Arsenal</SectionBadge>
           <h2 className="mb-6">Tools I <span className="gradient-text">Build With</span></h2>
           <p className="text-secondary text-lg">

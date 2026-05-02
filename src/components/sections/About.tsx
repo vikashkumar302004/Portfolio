@@ -392,10 +392,10 @@ const About = () => {
 
   return (
     <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
-          <div>
+          <div className="lg:pl-8">
             <SectionBadge>About Me</SectionBadge>
             <h2 className="mb-6">Bridging <span className="gradient-text">Human Ideas</span> & Intelligent Systems</h2>
             <div className="space-y-6 text-secondary text-lg leading-relaxed">
