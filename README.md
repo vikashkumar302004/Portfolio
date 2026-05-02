@@ -1,107 +1,84 @@
-# 🌌 Engineering Void — Ultra-Premium Portfolio
+# Vikash Kumar | Full-Stack & Generative AI Engineer
+
+A high-performance portfolio showcasing expertise in building scalable web systems, autonomous AI agents, and cloud-native architectures.
 
 <div align="center">
   <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Framer_Motion-6366f1?style=for-the-badge&logo=framer" alt="Framer Motion" />
   <img src="https://img.shields.io/badge/Three.js-Visuals-white?style=for-the-badge&logo=three.js" alt="Three.js" />
+  <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazon-aws" alt="AWS" />
 </div>
 
 ---
 
-## 🏛️ Project Vision
+## 👨‍💻 About Me
 
-"Engineering Void" is not just a portfolio; it's a cinematic experience designed to establish high technical authority. Moving away from generic templates, this project implements a **Stripe-meets-Linear** design language—characterized by obsidian black backgrounds, Bento-grid layouts, and authoritative glassmorphism.
+I am a 2nd-year IT Engineer at **KIET Group of Institutions**, specializing in the intersection of **Full-Stack Development**, **Generative AI**, and **Cloud Computing**. I focus on architecting experiences that are not only visually stunning but also technically robust and scalable.
 
-Built for performance and visual excellence, it showcases the intersection of **Full-Stack Engineering**, **Generative AI**, and **Cloud Architecture**.
-
----
-
-## 🧭 Table of Contents
-- [✨ Key Features](#-key-features)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🏗️ Architecture](#-architecture)
-- [🚀 Getting Started](#-getting-started)
-- [📈 Performance Metrics](#-performance-metrics)
-- [📧 Contact](#-contact)
+- 🚀 **Building**: Production-grade Full Stack applications.
+- 🧠 **Researching**: LLM orchestration and RAG pipelines.
+- ☁️ **Cloud**: AWS Certified Practitioner (Cloud & AI).
 
 ---
 
-## ✨ Key Features
+## 🛠️ Technical Ecosystem
 
-### 💎 Elite Visuals
-- **Metallic 3D Interaction**: A real-time, interactive 3D orb built with **React Three Fiber** and custom lighting shaders.
-- **Glassmorphic Bento Grid**: Modular sections for projects and certifications, providing a clean and confident information hierarchy.
-- **Micro-interactions**: Magnetic buttons, physics-based hover effects, and staggered scroll reveals.
-
-### 🧠 Intelligent Logic
-- **Typewriter State Machine**: A custom-built typing engine with precise control over pauses, deletion speeds, and word cycles.
-- **Dynamic Content**: Data-driven architecture where all content (projects, certs, skills) is decoupled from the UI for easy maintenance.
-
-### 🛡️ Validated Authority
-- **Credential Verification**: Integrated with Credly to show industry-validated AWS certifications with pulsing verified badges.
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
+| Category | technologies |
 |---|---|
-| **Frontend** | [Next.js 14](https://nextjs.org/) (App Router), [React 18](https://reactjs.org/) |
-| **Logic** | [TypeScript](https://www.typescriptlang.org/) |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) |
-| **Animation** | [Framer Motion](https://www.framer.com/motion/) |
-| **3D Graphics** | [Three.js](https://threejs.org/) / [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) |
-| **Icons** | [Lucide React](https://lucide.dev/), [React Icons](https://react-icons.github.io/react-icons/) |
+| **Frontend** | Next.js 14 (App Router), React 18, Tailwind CSS, Framer Motion |
+| **Backend** | Node.js, FastAPI, Python, PostgreSQL |
+| **AI / ML** | LangChain, Llama-3, Gemini Pro, RAG Pipelines, Vector DBs |
+| **Cloud / DevOps** | AWS (EC2, S3, Lambda), Docker, Vercel, CI/CD |
+| **3D / Creative** | Three.js, React Three Fiber, GLSL Shaders |
+
+---
+
+## 🚀 Key Projects
+
+### 🌌 NexGen Code
+**Architectural Code Intelligence Engine**
+- Integrated Groq LLaMA-3 and Gemini Pro for real-time code analysis.
+- Generates dynamic Mermaid.js architecture diagrams and Big-O complexity reports.
+- [Live Demo](https://nexgen-code.vercel.app/) | [Source Code](https://github.com/vikashkumar302004/Nexgen-code)
+
+### ⚡ Let's Code Hub
+**Unified DSA & Cloud Learning Platform**
+- Comprehensive practice platform for Data Structures and AWS Certification prep.
+- Features real-time progress tracking and performance analytics.
+- [Live Demo](https://aws-exam-hub-private.vercel.app/#/)
 
 ---
 
 ## 🏗️ Architecture
 
-The codebase follows a modular, scalable structure focused on developer experience:
+The project is built with a modular architecture for high performance and maintainability:
 
 ```text
 src/
-├── app/          # Route segments and global styles
-├── components/
-│   ├── sections/ # High-level layout components (Bento grid blocks)
-│   └── ui/       # Atom-level components (Buttons, Cards, Inputs)
-├── data/         # Central source of truth for all text content
-├── lib/          # Helper functions and shared animation variants
+├── app/          # App router segments and global styles
+├── components/   # UI components and section layouts
+├── data/         # Decoupled content source (Projects, Skills, etc.)
+├── lib/          # Utilities and shared animation variants
 └── types/        # Global TypeScript definitions
 ```
-
-> [!NOTE]
-> For a deep dive into the folder structure, check out the [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md) file.
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18.x or higher
-- npm or yarn
-
-### Installation
-1. Clone the repo:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/vikashkumar302004/Portfolio.git
    ```
-2. Install dependencies:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
-3. Start the engine:
+3. **Run the development server**:
    ```bash
    npm run dev
    ```
-
----
-
-## 📈 Performance Metrics
-- **Core Web Vitals**: Optimized for LCP and CLS.
-- **Dynamic Imports**: 3D components are loaded dynamically to ensure fast initial page loads.
-- **Type Safety**: 100% TypeScript coverage for robust production-grade stability.
 
 ---
 
@@ -117,6 +94,7 @@ src/
 </div>
 
 ---
+
 <div align="center">
-  <sub>Built with precision by <b>Vikash Kumar</b> © 2024</sub>
+  <sub>Built with expertise by <b>Vikash Kumar</b> © 2024</sub>
 </div>

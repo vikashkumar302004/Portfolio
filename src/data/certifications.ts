@@ -21,7 +21,7 @@ export const certifications: Certification[] = [
     issuer: "Amazon Web Services",
     year: "2024",
     badgeImage: "/assets/aws-ai-practitioner.png",
-    credentialUrl: "https://www.credly.com/badges/1f71a78a-d1d4-48a4-af21-0549093302a4/linked_in_profile",
+    credentialUrl: "https://www.credly.com/badges/1f71a38a-d1d4-48a4-af21-0549093302a4/linked_in_profile",
     accentColor: "#22d3ee",
     glowColor: "rgba(34,211,238,0.2)",
     description: "Validates foundational knowledge of AI/ML and Generative AI concepts on AWS — Amazon Bedrock, SageMaker, responsible AI, and enterprise AI patterns.",

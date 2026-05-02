@@ -298,38 +298,41 @@ export function ActivityFeed() {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 12, height: 140, overflow: "hidden", position: "relative" }}>
+    <div style={{ display: "flex", flexDirection: "column", gap: 10, height: 160, overflow: "hidden", position: "relative" }}>
       <AnimatePresence mode="popLayout">
         {visible.map((e, i) => (
           <motion.div
             key={e.user + e.time + i}
-            initial={{ opacity: 0, x: -15 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 15 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
             style={{ 
-              display: "flex", alignItems: "center", gap: 10,
-              padding: "12px", background: "rgba(255,255,255,0.04)",
-              borderRadius: 10, height: 42, // Enforce height to prevent overlap
+              display: "flex", alignItems: "center", gap: 12,
+              padding: "10px 14px", background: "rgba(255,255,255,0.03)",
+              border: "1px solid rgba(255,255,255,0.02)",
+              borderRadius: 12, height: 44,
               width: "100%", boxSizing: "border-box"
             }}
           >
             <div style={{
-              width: 24, height: 24, borderRadius: "50%", background: "linear-gradient(135deg, #7c3aed, #6366f1)",
+              width: 26, height: 26, borderRadius: "50%", background: "linear-gradient(135deg, #7c3aed, #6366f1)",
               display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Space Grotesk, sans-serif", fontSize: 10, color: "#fff", fontWeight: 700, flexShrink: 0,
             }}>
               {e.user[0].toUpperCase()}
             </div>
             <div style={{ flex: 1, overflow: "hidden" }}>
-              <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "#94a3b8", display: "block", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                <span style={{ color: "#f8fafc", fontWeight: 600 }}>{e.user}</span>
-                {" "}{e.action}{" "}
-                <span style={{ color: e.color, fontWeight: 500 }}>{e.item}</span>
-              </span>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: 11, color: "#94a3b8", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                  <span style={{ color: "#f8fafc", fontWeight: 600 }}>{e.user}</span>
+                  {" "}{e.action}{" "}
+                  <span style={{ color: e.color, fontWeight: 500 }}>{e.item}</span>
+                </span>
+                <span style={{ fontFamily: "JetBrains Mono, monospace", fontSize: 9, color: "#475569", marginLeft: 8, flexShrink: 0 }}>
+                  {e.time}
+                </span>
+              </div>
             </div>
-            <span style={{ fontFamily: "JetBrains Mono, monospace", fontSize: 9, color: "#475569", flexShrink: 0 }}>
-              {e.time}
-            </span>
           </motion.div>
         ))}
       </AnimatePresence>
@@ -592,7 +595,7 @@ export default function Projects() {
             ))}
 
             <div style={{ display: "flex", gap: 10, flexWrap: "wrap", margin: "40px 0" }}>
-              {["React", "JavaScript", "AWS SDK", "Vercel", "Tailwind"].map(t => (
+              {["React", "Node.js", "FastAPI", "LangChain", "AWS SDK"].map(t => (
                 <span key={t} style={{ fontFamily: "JetBrains Mono, monospace", fontSize: 12, color: "#22d3ee", border: "1px solid rgba(34,211,238,0.25)", borderRadius: 10, padding: "8px 16px", background: "rgba(34,211,238,0.1)", fontWeight: 600 }}>{t}</span>
               ))}
             </div>

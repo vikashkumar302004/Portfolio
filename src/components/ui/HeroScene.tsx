@@ -66,13 +66,8 @@ const NeuralConnections = ({ count }: { count: number }) => {
 }
 
 const Scene = () => {
-  const mesh = useRef<THREE.Mesh>(null!)
-  
-  useFrame((state) => {
-    const time = state.clock.getElapsedTime()
-    mesh.current.rotation.y = time * 0.1
-    mesh.current.rotation.x = time * 0.05
-  })
+  // No mesh to rotate
+
 
   return (
     <>
@@ -80,19 +75,8 @@ const Scene = () => {
       <pointLight position={[10, 10, 10]} intensity={1.5} color="#7c3aed" />
       <pointLight position={[-10, -10, -10]} intensity={1} color="#22d3ee" />
       
-      <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
-        <mesh ref={mesh}>
-          <sphereGeometry args={[1.2, 64, 64]} />
-          <MeshDistortMaterial
-            color="#4c1d95"
-            speed={2}
-            distort={0.3}
-            radius={1}
-            roughness={0.2}
-            metalness={0.9}
-          />
-        </mesh>
-      </Float>
+      {/* Removed the central void sphere to focus on the profile image */}
+
 
       <NeuralConnections count={150} />
     </>

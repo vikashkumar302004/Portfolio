@@ -12,7 +12,10 @@ module.exports = {
       colors: {
         void: '#010409',
         deep: '#080d1a',
-        surface: '#0d1424',
+        surface: {
+          DEFAULT: '#0d1424',
+          lighter: '#151f35',
+        },
         elevated: '#131d31',
         violet: { DEFAULT: '#7c3aed', light: '#a78bfa' },
         indigo: { DEFAULT: '#6366f1' },
@@ -32,6 +35,8 @@ module.exports = {
         'float': 'float 6s ease-in-out infinite',
         'blink': 'blink 1s step-end infinite',
         'shimmer': 'shimmer 2.5s linear infinite',
+        'shimmer-slide': 'shimmerSlide 3s ease-in-out infinite',
+        'scan': 'scan 3s ease-in-out infinite',
         'spin-slow': 'spin 8s linear infinite',
       },
       keyframes: {
@@ -50,6 +55,14 @@ module.exports = {
         shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
+        },
+        shimmerSlide: {
+          '0%': { transform: 'translateX(-100%)' },
+          '50%, 100%': { transform: 'translateX(100%)' },
+        },
+        scan: {
+          '0%, 100%': { transform: 'translateY(-100%)', opacity: '0' },
+          '50%': { transform: 'translateY(100%)', opacity: '1' },
         },
       },
       backgroundImage: {

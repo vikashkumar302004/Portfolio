@@ -213,19 +213,13 @@ export function AboutRightPanel() {
                     display: "flex", alignItems: "center", justifyContent: "center",
                   }}
                 >
-                  <span
-                    style={{
-                      fontFamily: "Space Grotesk, sans-serif",
-                      fontWeight: 700,
-                      fontSize: 20,
-                      background: "linear-gradient(135deg, #a78bfa, #67e8f9)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text",
-                    }}
-                  >
-                    VK
-                  </span>
+                  <Image 
+                    src="/assets/hi.png" 
+                    alt="VK Logo" 
+                    width={40} 
+                    height={40} 
+                    className="w-[70%] h-[70%] object-contain"
+                  />
                 </div>
               </motion.div>
 

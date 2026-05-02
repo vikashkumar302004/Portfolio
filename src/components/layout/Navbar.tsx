@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -52,8 +53,15 @@ const Navbar: React.FC = () => {
     )}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#home" className="text-2xl font-bold font-grotesk gradient-text">
-          VK
+        <Link href="#home" className="flex items-center gap-2 group">
+          <div className="relative w-10 h-10 overflow-hidden rounded-lg">
+            <Image 
+              src="/assets/hi.png" 
+              alt="VK Logo" 
+              fill 
+              className="object-contain group-hover:scale-110 transition-transform duration-300" 
+            />
+          </div>
         </Link>
 
         {/* Desktop Links */}
