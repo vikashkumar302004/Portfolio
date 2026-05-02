@@ -62,12 +62,12 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
         {/* Left Content */}
         <motion.div
           initial="hidden"
           animate="visible"
-          className="max-w-2xl"
+          className="max-w-2xl lg:pl-8"
         >
           {/* Status Pill */}
           <motion.div variants={fadeUp} className="mb-8">
